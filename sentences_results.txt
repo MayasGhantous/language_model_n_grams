@@ -1,0 +1,286 @@
+Original sentence: יש צורך [*] ביצירת מקומות עבודה רבים יותר , בתשלום שכר [*] בעד העבודה .
+Committee sentence:יש צורך לעשות ביצירת מקומות עבודה רבים יותר , בתשלום שכר אולי בעד העבודה .
+Committee tokens: ['לעשות', 'אולי']
+Probability of committee sentence in committee corpus: -148.03336800172227
+Probability of committee sentence in plenary corpus: -153.86617712349897
+Plenary sentence: יש צורך בהשקעה ביצירת מקומות עבודה רבים יותר , בתשלום שכר דירה בעד העבודה .
+Plenary tokens: ['בהשקעה', 'דירה']
+Probability of plenary sentence in plenary corpus: -152.88547701314164
+Probability of plenary sentence in committee corpus: -148.72645769284588
+This sentence is more likely to appear in corpus: committee
+
+Original sentence: אבל הנושא הוא [*] אם אתה בעד [*] ההתנתקות או נגד .
+Committee sentence:אבל הנושא הוא צריך אם אתה בעד אולי ההתנתקות או נגד .
+Committee tokens: ['צריך', 'אולי']
+Probability of committee sentence in committee corpus: -118.71243353911741
+Probability of committee sentence in plenary corpus: -122.62220691605964
+Plenary sentence: אבל הנושא הוא שכר אם אתה בעד או ההתנתקות או נגד .
+Plenary tokens: ['שכר', 'או']
+Probability of plenary sentence in plenary corpus: -119.91346296735144
+Probability of plenary sentence in committee corpus: -119.40423066848633
+This sentence is more likely to appear in corpus: committee
+
+Original sentence: לכן , הממשלה מתנגדת [*] החוק הזאת , [*] להביא לפתרון הבעיה בדרך [*] .
+Committee sentence:לכן , הממשלה מתנגדת . החוק הזאת , אבל להביא לפתרון הבעיה בדרך מכובדת .
+Committee tokens: ['.', 'אבל', 'מכובדת']
+Probability of committee sentence in committee corpus: -143.46985741055727
+Probability of committee sentence in plenary corpus: -145.7983057870189
+Plenary sentence: לכן , הממשלה מתנגדת להצעת החוק הזאת , אבל להביא לפתרון הבעיה בדרך אתה .
+Plenary tokens: ['להצעת', 'אבל', 'אתה']
+Probability of plenary sentence in plenary corpus: -139.06683922670885
+Probability of plenary sentence in committee corpus: -143.47000111969024
+This sentence is more likely to appear in corpus: plenary
+
+Original sentence: ההצמדה [*] [*] לא הוראת שעה .
+Committee sentence:ההצמדה . אולי לא הוראת שעה .
+Committee tokens: ['.', 'אולי']
+Probability of committee sentence in committee corpus: -72.94806011352198
+Probability of committee sentence in plenary corpus: -77.11090210806658
+Plenary sentence: ההצמדה . אתה לא הוראת שעה .
+Plenary tokens: ['.', 'אתה']
+Probability of plenary sentence in plenary corpus: -77.11348051702878
+Probability of plenary sentence in committee corpus: -72.95035639169163
+This sentence is more likely to appear in corpus: committee
+
+Original sentence: עזבי את [*] 84 , אני לא מכיר את חוק [*] והבנייה .
+Committee sentence:עזבי את אולי 84 , אני לא מכיר את חוק חובת והבנייה .
+Committee tokens: ['אולי', 'חובת']
+Probability of committee sentence in committee corpus: -126.62516619498899
+Probability of committee sentence in plenary corpus: -135.71181006019123
+Plenary sentence: עזבי את אתה 84 , אני לא מכיר את חוק ההסדרים והבנייה .
+Plenary tokens: ['אתה', 'ההסדרים']
+Probability of plenary sentence in plenary corpus: -133.7678350522794
+Probability of plenary sentence in committee corpus: -127.03068878096734
+This sentence is more likely to appear in corpus: committee
+
+Original sentence: עלות החוק [*] מיליארד [*] .
+Committee sentence:עלות החוק . מיליארד אולי .
+Committee tokens: ['.', 'אולי']
+Probability of committee sentence in committee corpus: -59.94937565164349
+Probability of committee sentence in plenary corpus: -63.06518197702084
+Plenary sentence: עלות החוק . מיליארד אתה .
+Plenary tokens: ['.', 'אתה']
+Probability of plenary sentence in plenary corpus: -63.06518197702084
+Probability of plenary sentence in committee corpus: -59.94937565164349
+This sentence is more likely to appear in corpus: committee
+
+Original sentence: מסיבות שונות , [*] 1,275 התיקים שנפתחו בשנת [*] - טרם הוגשו כתבי אישום .
+Committee sentence:מסיבות שונות , כל 1,275 התיקים שנפתחו בשנת אולי - טרם הוגשו כתבי אישום .
+Committee tokens: ['כל', 'אולי']
+Probability of committee sentence in committee corpus: -156.20283242047628
+Probability of committee sentence in plenary corpus: -158.49792378277283
+Plenary sentence: מסיבות שונות , כי 1,275 התיקים שנפתחו בשנת אתה - טרם הוגשו כתבי אישום .
+Plenary tokens: ['כי', 'אתה']
+Probability of plenary sentence in plenary corpus: -157.41622057103
+Probability of plenary sentence in committee corpus: -156.90526715248362
+This sentence is more likely to appear in corpus: committee
+
+Original sentence: [*] לך , [*] , על תשובתך המקיפה .
+Committee sentence:. לך , אני , על תשובתך המקיפה .
+Committee tokens: ['.', 'אני']
+Probability of committee sentence in committee corpus: -84.41840861391987
+Probability of committee sentence in plenary corpus: -84.93260892317117
+Plenary sentence: , לך , אדוני , על תשובתך המקיפה .
+Plenary tokens: [',', 'אדוני']
+Probability of plenary sentence in plenary corpus: -75.1058455852935
+Probability of plenary sentence in committee corpus: -81.98069587555516
+This sentence is more likely to appear in corpus: plenary
+
+Original sentence: [*] אומר רק דבר אחד : בוא נראה את [*] האחר של המטבע .
+Committee sentence:. אומר רק דבר אחד : בוא נראה את זה האחר של המטבע .
+Committee tokens: ['.', 'זה']
+Probability of committee sentence in committee corpus: -135.5401934276531
+Probability of committee sentence in plenary corpus: -142.05632187981954
+Plenary sentence: , אומר רק דבר אחד : בוא נראה את התוצאות האחר של המטבע .
+Plenary tokens: [',', 'התוצאות']
+Probability of plenary sentence in plenary corpus: -138.04031484301925
+Probability of plenary sentence in committee corpus: -135.10426920723177
+This sentence is more likely to appear in corpus: committee
+
+Original sentence: אני מנסה להבין את הפער הזה , איך יכול [*] שמצד אחד הכל [*] , הכל תחת רגולציה ומצד שני , [*] ומזהמים ברישיון .
+Committee sentence:אני מנסה להבין את הפער הזה , איך יכול להיות שמצד אחד הכל אולי , הכל תחת רגולציה ומצד שני , יש ומזהמים ברישיון .
+Committee tokens: ['להיות', 'אולי', 'יש']
+Probability of committee sentence in committee corpus: -247.02686440594
+Probability of committee sentence in plenary corpus: -258.1744867819799
+Plenary sentence: אני מנסה להבין את הפער הזה , איך יכול להיות שמצד אחד הכל אתה , הכל תחת רגולציה ומצד שני , חוב' ומזהמים ברישיון .
+Plenary tokens: ['להיות', 'אתה', "חוב'"]
+Probability of plenary sentence in plenary corpus: -256.2179761834608
+Probability of plenary sentence in committee corpus: -248.62597836111954
+This sentence is more likely to appear in corpus: committee
+
+Original sentence: בסופו של דבר , גם אני הייתי [*] אליפויות העולם רצוף שבע שנים , וכן יצאנו עם דגל ישראל ואני יודעת שחוץ מאימא שלי , אף [*] לא יודע שבאמת אנחנו מייצגים את ישראל [*] .
+Committee sentence:בסופו של דבר , גם אני הייתי שם אליפויות העולם רצוף שבע שנים , וכן יצאנו עם דגל ישראל ואני יודעת שחוץ מאימא שלי , אף אחד לא יודע שבאמת אנחנו מייצגים את ישראל בחפירות .
+Committee tokens: ['שם', 'אחד', 'בחפירות']
+Probability of committee sentence in committee corpus: -345.46450828070437
+Probability of committee sentence in plenary corpus: -360.06968624184645
+Plenary sentence: בסופו של דבר , גם אני הייתי רוצה אליפויות העולם רצוף שבע שנים , וכן יצאנו עם דגל ישראל ואני יודעת שחוץ מאימא שלי , אף אחד לא יודע שבאמת אנחנו מייצגים את ישראל , .
+Plenary tokens: ['רוצה', 'אחד', ',']
+Probability of plenary sentence in plenary corpus: -358.00152067192477
+Probability of plenary sentence in committee corpus: -346.4482951504015
+This sentence is more likely to appear in corpus: committee
+
+Original sentence: אבל אומרים לו , תשמע , [*] אצל [*] מאוד מאוד ארוך וכדאי שתעשה את הבדיקה [*] .
+Committee sentence:אבל אומרים לו , תשמע , כל אצל אולי מאוד מאוד ארוך וכדאי שתעשה את הבדיקה היו .
+Committee tokens: ['כל', 'אולי', 'היו']
+Probability of committee sentence in committee corpus: -181.17084800460754
+Probability of committee sentence in plenary corpus: -192.70178241017837
+Plenary sentence: אבל אומרים לו , תשמע , פה אצל אתה מאוד מאוד ארוך וכדאי שתעשה את הבדיקה - .
+Plenary tokens: ['פה', 'אתה', '-']
+Probability of plenary sentence in plenary corpus: -191.31048173154159
+Probability of plenary sentence in committee corpus: -181.8599225689907
+This sentence is more likely to appear in corpus: committee
+
+Original sentence: [*] העולם הם [*] באנגלית .
+Committee sentence:. העולם הם אולי באנגלית .
+Committee tokens: ['.', 'אולי']
+Probability of committee sentence in committee corpus: -55.651212709183724
+Probability of committee sentence in plenary corpus: -58.73047806847737
+Plenary sentence: , העולם הם אתה באנגלית .
+Plenary tokens: [',', 'אתה']
+Probability of plenary sentence in plenary corpus: -56.81592231952709
+Probability of plenary sentence in committee corpus: -55.723046246480564
+This sentence is more likely to appear in corpus: committee
+
+Original sentence: אז היא [*] אותו : [*] , אתה קיצצת ולא נתת משכורת למורה שלי ?
+Committee sentence:אז היא צריכה אותו : אולי , אתה קיצצת ולא נתת משכורת למורה שלי ?
+Committee tokens: ['צריכה', 'אולי']
+Probability of committee sentence in committee corpus: -150.30216633033024
+Probability of committee sentence in plenary corpus: -159.8105361217667
+Plenary sentence: אז היא לא אותו : אתה , אתה קיצצת ולא נתת משכורת למורה שלי ?
+Plenary tokens: ['לא', 'אתה']
+Probability of plenary sentence in plenary corpus: -159.12109482699134
+Probability of plenary sentence in committee corpus: -150.99889901146616
+This sentence is more likely to appear in corpus: committee
+
+Original sentence: [*] בעצם הגענו להסכמות [*] רחבות , שקשורות בעיקר לצרכים של השקיפות בכל מה שקשור בתהליך קבלת התרומות האלה .
+Committee sentence:. בעצם הגענו להסכמות אולי רחבות , שקשורות בעיקר לצרכים של השקיפות בכל מה שקשור בתהליך קבלת התרומות האלה .
+Committee tokens: ['.', 'אולי']
+Probability of committee sentence in committee corpus: -199.48585921713487
+Probability of committee sentence in plenary corpus: -209.77347332781747
+Plenary sentence: , בעצם הגענו להסכמות אתה רחבות , שקשורות בעיקר לצרכים של השקיפות בכל מה שקשור בתהליך קבלת התרומות האלה .
+Plenary tokens: [',', 'אתה']
+Probability of plenary sentence in plenary corpus: -205.9876963954278
+Probability of plenary sentence in committee corpus: -196.85004490999538
+This sentence is more likely to appear in corpus: committee
+
+Original sentence: אני חושבת שזה מאוד לא נכון [*] כזה דיון שרואים שבאמת הציבור [*] בבית ורואה שאף אחד מחברי [*] לא מופיע .
+Committee sentence:אני חושבת שזה מאוד לא נכון . כזה דיון שרואים שבאמת הציבור אולי בבית ורואה שאף אחד מחברי הוועדה לא מופיע .
+Committee tokens: ['.', 'אולי', 'הוועדה']
+Probability of committee sentence in committee corpus: -212.46508576147593
+Probability of committee sentence in plenary corpus: -223.24389230437455
+Plenary sentence: אני חושבת שזה מאוד לא נכון . כזה דיון שרואים שבאמת הציבור אתה בבית ורואה שאף אחד מחברי הכנסת לא מופיע .
+Plenary tokens: ['.', 'אתה', 'הכנסת']
+Probability of plenary sentence in plenary corpus: -220.13221645870442
+Probability of plenary sentence in committee corpus: -213.15849161104074
+This sentence is more likely to appear in corpus: committee
+
+Original sentence: אני התחלתי לעשות סקי כשהייתי בגיל שמונה , אני 20 שנה בענף , [*] הרב , זה די קשה להמשיך [*] לעשות סקי ולהגיע להישגים , כי גם יש לנו [*] אחד , היחיד בארץ , שהוא נמצא בפארק דרום בתל-אביב , וגם אין מספיק מודעות לספורט הזה , במדינה .
+Committee sentence:אני התחלתי לעשות סקי כשהייתי בגיל שמונה , אני 20 שנה בענף , יפה הרב , זה די קשה להמשיך אולי לעשות סקי ולהגיע להישגים , כי גם יש לנו את אחד , היחיד בארץ , שהוא נמצא בפארק דרום בתל-אביב , וגם אין מספיק מודעות לספורט הזה , במדינה .
+Committee tokens: ['יפה', 'אולי', 'את']
+Probability of committee sentence in committee corpus: -519.0692827385803
+Probability of committee sentence in plenary corpus: -544.795524331239
+Plenary sentence: אני התחלתי לעשות סקי כשהייתי בגיל שמונה , אני 20 שנה בענף , כדי הרב , זה די קשה להמשיך אתה לעשות סקי ולהגיע להישגים , כי גם יש לנו בעיה אחד , היחיד בארץ , שהוא נמצא בפארק דרום בתל-אביב , וגם אין מספיק מודעות לספורט הזה , במדינה .
+Plenary tokens: ['כדי', 'אתה', 'בעיה']
+Probability of plenary sentence in plenary corpus: -542.093778592013
+Probability of plenary sentence in committee corpus: -519.764552933793
+This sentence is more likely to appear in corpus: committee
+
+Original sentence: הוא נוסד בשנת 2002 על ידי ג'ניפר לסלו מהמזרחי ובמשך 8 שנים ניהלנו את קבוצות המוקד מלוס [*] לבייג'ינג בעניין מסרים מנצחים [*] לתקשר באשר לישראל .
+Committee sentence:הוא נוסד בשנת 2002 על ידי ג'ניפר לסלו מהמזרחי ובמשך 8 שנים ניהלנו את קבוצות המוקד מלוס אולי לבייג'ינג בעניין מסרים מנצחים אולי לתקשר באשר לישראל .
+Committee tokens: ['אולי', 'אולי']
+Probability of committee sentence in committee corpus: -277.27688876946286
+Probability of committee sentence in plenary corpus: -292.4347524228104
+Plenary sentence: הוא נוסד בשנת 2002 על ידי ג'ניפר לסלו מהמזרחי ובמשך 8 שנים ניהלנו את קבוצות המוקד מלוס אתה לבייג'ינג בעניין מסרים מנצחים אתה לתקשר באשר לישראל .
+Plenary tokens: ['אתה', 'אתה']
+Probability of plenary sentence in plenary corpus: -292.4347524228104
+Probability of plenary sentence in committee corpus: -277.27688876946286
+This sentence is more likely to appear in corpus: committee
+
+Original sentence: [*] את נושא [*] , לדוגמה .
+Committee sentence:. את נושא המשרה , לדוגמה .
+Committee tokens: ['.', 'המשרה']
+Probability of committee sentence in committee corpus: -64.31751561294462
+Probability of committee sentence in plenary corpus: -69.0718979888062
+Plenary sentence: , את נושא הנכים , לדוגמה .
+Plenary tokens: [',', 'הנכים']
+Probability of plenary sentence in plenary corpus: -61.04928547101893
+Probability of plenary sentence in committee corpus: -61.19486409996945
+This sentence is more likely to appear in corpus: plenary
+
+Original sentence: [*] [*] לעצור [*] מראש ?
+Committee sentence:. . לעצור אולי מראש ?
+Committee tokens: ['.', '.', 'אולי']
+Probability of committee sentence in committee corpus: -53.253604850522365
+Probability of committee sentence in plenary corpus: -58.73042963802752
+Plenary sentence: , אני לעצור אתה מראש ?
+Plenary tokens: [',', 'אני', 'אתה']
+Probability of plenary sentence in plenary corpus: -50.767162110431535
+Probability of plenary sentence in committee corpus: -48.846523842921755
+This sentence is more likely to appear in corpus: plenary
+
+Original sentence: זה לא [*] בשום [*]
+Committee sentence:זה לא רק בשום אולי
+Committee tokens: ['רק', 'אולי']
+Probability of committee sentence in committee corpus: -36.46964600492761
+Probability of committee sentence in plenary corpus: -38.989252036904304
+Plenary sentence: זה לא נכון בשום אתה
+Plenary tokens: ['נכון', 'אתה']
+Probability of plenary sentence in plenary corpus: -38.86688696282907
+Probability of plenary sentence in committee corpus: -36.81190673228582
+This sentence is more likely to appear in corpus: committee
+
+Original sentence: אנחנו צריכים [*] טובי המשפטנים .
+Committee sentence:אנחנו צריכים לעשות טובי המשפטנים .
+Committee tokens: ['לעשות']
+Probability of committee sentence in committee corpus: -50.35852149763504
+Probability of committee sentence in plenary corpus: -53.58793185569289
+Plenary sentence: אנחנו צריכים לעשות טובי המשפטנים .
+Plenary tokens: ['לעשות']
+Probability of plenary sentence in plenary corpus: -53.58793185569289
+Probability of plenary sentence in committee corpus: -50.35852149763504
+This sentence is more likely to appear in corpus: committee
+
+Original sentence: [*] תחום שצריך [*] התייחסות ממוקדת .
+Committee sentence:. תחום שצריך אולי התייחסות ממוקדת .
+Committee tokens: ['.', 'אולי']
+Probability of committee sentence in committee corpus: -66.10826923302467
+Probability of committee sentence in plenary corpus: -68.66585181013642
+Plenary sentence: , תחום שצריך אתה התייחסות ממוקדת .
+Plenary tokens: [',', 'אתה']
+Probability of plenary sentence in plenary corpus: -68.25532502829437
+Probability of plenary sentence in committee corpus: -64.7938658969855
+This sentence is more likely to appear in corpus: committee
+
+Original sentence: [*] לא אתן , נושא [*] הוא מאוד מוגדר .
+Committee sentence:. לא אתן , נושא של הוא מאוד מוגדר .
+Committee tokens: ['.', 'של']
+Probability of committee sentence in committee corpus: -95.17837678476528
+Probability of committee sentence in plenary corpus: -100.78786843624613
+Plenary sentence: , לא אתן , נושא אחר הוא מאוד מוגדר .
+Plenary tokens: [',', 'אחר']
+Probability of plenary sentence in plenary corpus: -93.28506594520087
+Probability of plenary sentence in committee corpus: -91.14316917174403
+This sentence is more likely to appear in corpus: plenary
+
+Original sentence: אם לא [*] ולא אפשרי [*] מסתייע , אנחנו נעשה [*] התיאום במסגרת הוועדה .
+Committee sentence:אם לא , ולא אפשרי אולי מסתייע , אנחנו נעשה את התיאום במסגרת הוועדה .
+Committee tokens: [',', 'אולי', 'את']
+Probability of committee sentence in committee corpus: -142.74938445224842
+Probability of committee sentence in plenary corpus: -151.11806169652147
+Plenary sentence: אם לא , ולא אפשרי אתה מסתייע , אנחנו נעשה דיון התיאום במסגרת הוועדה .
+Plenary tokens: [',', 'אתה', 'דיון']
+Probability of plenary sentence in plenary corpus: -150.42452714349173
+Probability of plenary sentence in committee corpus: -144.35819016258668
+This sentence is more likely to appear in corpus: committee
+
+Original sentence: 
+Committee sentence:
+Committee tokens: []
+Probability of committee sentence in committee corpus: 1
+Probability of committee sentence in plenary corpus: 1
+Plenary sentence: 
+Plenary tokens: []
+Probability of plenary sentence in plenary corpus: 1
+Probability of plenary sentence in committee corpus: 1
+This sentence is more likely to appear in corpus: committee
+
