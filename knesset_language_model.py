@@ -88,9 +88,9 @@ class corpus:
         #notes
         '''sentence_prop calculation sentece will chane
         still need the progran the second type of smoothing'''
-        lambda1 = 0.05
-        lambda2 = 0.05
-        lambda3 = 0.9
+        lambda1 = 0.1
+        lambda2 = 0.2
+        lambda3 = 0.7
         sentence_token_temp = sentence.split(' ')
         sentence_token = []
         for token in sentence_token_temp:
@@ -125,12 +125,17 @@ class corpus:
                     sentence_prop = np.log(lambda1*(frequncy_dictionary.get(token,0)+1)/(corpus_size+V))
                 elif token_number == 1:# if we are at the second word
                     #caluclate
-                    sentence_prop += np.log((lambda2*(frequncy_dictionary_2_words.get(sentence_token[0],{}).get(token,0)+1)/(frequncy_dictionary.get(sentence_token[0],0)+V))+lambda1*(frequncy_dictionary.get(token,0)+1)/(corpus_size+V))#may change
+                    bi_prob = (lambda2*(frequncy_dictionary_2_words.get(sentence_token[0],{}).get(token,0))/(frequncy_dictionary.get(sentence_token[0],1)))
+                    Uni_prob = lambda1*(frequncy_dictionary.get(token,0)+1)/(corpus_size+V)
+                    sentence_prop += np.log(bi_prob+Uni_prob)#may change
                 else:
                     first = sentence_token[token_number-2]
                     second = sentence_token[token_number-1]
                     third = token
-                    sentence_prop += np.log((lambda3*(frequncy_dictionary_3_words.get(first,{}).get(second,{}).get(third,0)+1)/(frequncy_dictionary_2_words.get(first,{}).get(second,0)+V))+(lambda2*(frequncy_dictionary_2_words.get(second,{}).get(third,0)+1)/(frequncy_dictionary.get(second,0)+V))+(lambda1*(frequncy_dictionary.get(third,0)+1)/(corpus_size+V)))#may change
+                    tri_prob = (lambda3*(frequncy_dictionary_3_words.get(first,{}).get(second,{}).get(third,0))/(frequncy_dictionary_2_words.get(first,{}).get(second,1)))
+                    bi_prob = (lambda2*(frequncy_dictionary_2_words.get(second,{}).get(third,0))/(frequncy_dictionary.get(second,1)))
+                    Uni_prob = (lambda1*(frequncy_dictionary.get(third,0)+1)/(corpus_size+V))
+                    sentence_prop += np.log(tri_prob+bi_prob+Uni_prob)#may change
             return float(format(sentence_prop, '.3f'))
         
 
@@ -141,6 +146,11 @@ class corpus:
         max_prop = -np.infty
         max_token = ''
         # for every possiable token make calcualte the prop of he sentce and return the token that have the highes prop
+        sentnce_tokens = sentence.strip().split(' ')
+        if len(sentnce_tokens) >2:
+            sentnce_tokens = sentnce_tokens[-2:]
+            sentence = sentnce_tokens[0]+' '+sentnce_tokens[1]
+
         for word in frequncy_dictionary.keys():
             if word == ' ' or word == '':
                 continue
