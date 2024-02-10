@@ -65,10 +65,10 @@ Probability of plenary sentence in committee corpus: -33.295
 This sentence is more likely to appear in corpus: committee
 
 Original sentence: מסיבות שונות , [*] 1,275 התיקים שנפתחו בשנת [*] - טרם הוגשו כתבי אישום .
-Committee sentence:מסיבות שונות , יש 1,275 התיקים שנפתחו בשנת 2008 - טרם הוגשו כתבי אישום .
-Committee tokens: ['יש', '2008']
-Probability of committee sentence in committee corpus: -143.33
-Probability of committee sentence in plenary corpus: -109.941
+Committee sentence:מסיבות שונות , יש 1,275 התיקים שנפתחו בשנת 2010 - טרם הוגשו כתבי אישום .
+Committee tokens: ['יש', '2010']
+Probability of committee sentence in committee corpus: -145.069
+Probability of committee sentence in plenary corpus: -109.654
 Plenary sentence: מסיבות שונות , כי 1,275 התיקים שנפתחו בשנת 2000 - טרם הוגשו כתבי אישום .
 Plenary tokens: ['כי', '2000']
 Probability of plenary sentence in plenary corpus: -105.136
@@ -120,10 +120,10 @@ Probability of plenary sentence in committee corpus: -254.431
 This sentence is more likely to appear in corpus: plenary
 
 Original sentence: אבל אומרים לו , תשמע , [*] אצל [*] מאוד מאוד ארוך וכדאי שתעשה את הבדיקה [*] .
-Committee sentence:אבל אומרים לו , תשמע , כל אצל נשים מאוד מאוד ארוך וכדאי שתעשה את הבדיקה היו .
-Committee tokens: ['כל', 'נשים', 'היו']
-Probability of committee sentence in committee corpus: -118.049
-Probability of committee sentence in plenary corpus: -152.131
+Committee sentence:אבל אומרים לו , תשמע , כל אצל נשים מאוד מאוד ארוך וכדאי שתעשה את הבדיקה כמה .
+Committee tokens: ['כל', 'נשים', 'כמה']
+Probability of committee sentence in committee corpus: -118.031
+Probability of committee sentence in plenary corpus: -151.766
 Plenary sentence: אבל אומרים לו , תשמע , פה אצל חברי מאוד מאוד ארוך וכדאי שתעשה את הבדיקה - .
 Plenary tokens: ['פה', 'חברי', '-']
 Probability of plenary sentence in plenary corpus: -133.778
@@ -219,10 +219,10 @@ Probability of plenary sentence in committee corpus: -40.164
 This sentence is more likely to appear in corpus: committee
 
 Original sentence: זה לא [*] בשום [*]
-Committee sentence:זה לא רק בשום פנים
-Committee tokens: ['רק', 'פנים']
+Committee sentence:זה לא רק בשום מקום
+Committee tokens: ['רק', 'מקום']
 Probability of committee sentence in committee corpus: -28.938
-Probability of committee sentence in plenary corpus: -29.135
+Probability of committee sentence in plenary corpus: -29.562
 Plenary sentence: זה לא היה בשום פנים
 Plenary tokens: ['היה', 'פנים']
 Probability of plenary sentence in plenary corpus: -29.117
@@ -271,16 +271,5 @@ Plenary sentence: אם לא , ולא אפשרי . מסתייע , אנחנו נע
 Plenary tokens: [',', '.', 'דיון']
 Probability of plenary sentence in plenary corpus: -105.874
 Probability of plenary sentence in committee corpus: -111.356
-This sentence is more likely to appear in corpus: committee
-
-Original sentence: 
-Committee sentence:
-Committee tokens: []
-Probability of committee sentence in committee corpus: 1.0
-Probability of committee sentence in plenary corpus: 1.0
-Plenary sentence: 
-Plenary tokens: []
-Probability of plenary sentence in plenary corpus: 1.0
-Probability of plenary sentence in committee corpus: 1.0
 This sentence is more likely to appear in corpus: committee
 

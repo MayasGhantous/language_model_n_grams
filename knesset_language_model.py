@@ -6,10 +6,11 @@ import heapq
 
 
 class corpus:
-    def __init__(self,type):
+    def __init__(self,type,corpus):
         self.type = type
+        self.corpus = corpus
         # read the data
-        df = pd.read_csv('example_knesset_corpus.csv')
+        df = pd.read_csv(corpus)
 
         frequncy_dictionary = {} #frequncy_dictionary[word] = how many did the token appear
         df = df.loc[df['protocol_type'] == type]
@@ -100,7 +101,7 @@ class corpus:
 
         if 'Laplace' == smoothing:
             V = len(frequncy_dictionary.keys())# number of diffrent words
-            sentence_prop  = 1
+            sentence_prop  = 0
             for token_number, token in enumerate(sentence_token):
                 if token_number ==0 : #if we are at the fist word in the sentence
                     
@@ -118,7 +119,7 @@ class corpus:
             return float(format(sentence_prop, '.3f'))
         else:
             V = len(frequncy_dictionary.keys())# number of diffrent words
-            sentence_prop  = 1
+            sentence_prop  = 0
             for token_number, token in enumerate(sentence_token):
                 if token_number ==0 :# if we are at the first word
                     #caluclate
@@ -155,7 +156,7 @@ class corpus:
             if word == ' ' or word == '':
                 continue
             sentece_porp = self.calculate_prob_of_sentence(sentence=f'{sentence.strip()} {word}',smoothing='Linear')
-            if sentece_porp > max_prop: 
+            if sentece_porp >= max_prop: 
                 max_prop = sentece_porp
                 max_token = word
 
@@ -167,7 +168,7 @@ class corpus:
         frequncy_dictionary,frequncy_dictionary_2_words,frequncy_dictionary_3_words,corpus_size = self.frequncy_dictionary,self.frequncy_dictionary_2_words,self.frequncy_dictionary_3_words,self.corpus_size
         collocations_dictionary = {} #the counter for all the possable collocations 
         # read the right type of data 
-        df = pd.read_csv('example_knesset_corpus.csv')
+        df = pd.read_csv(self.corpus)
         df = df.loc[df['protocol_type'] == self.type]
 
 
@@ -250,6 +251,9 @@ def Q3_text (plenary_corpus,committee_corpus):
         sentences = file_contents.split('\n')
         text = ''#create the text
         for sentence in sentences:
+            if sentence.strip() == '':
+                continue
+
             text+='Original sentence: '+sentence+ '\n'#print the sentnce 
 
             
@@ -308,8 +312,8 @@ def Q3_text (plenary_corpus,committee_corpus):
 
 if __name__ == '__main__':
     #we work on plenary
-    plenary_corpus = corpus('plenary')
+    plenary_corpus = corpus('plenary','example_knesset_corpus.csv')
     print(len(plenary_corpus.frequncy_dictionary.keys()))
-    committee_corpus = corpus('committee')
+    committee_corpus = corpus('committee','example_knesset_corpus.csv')
     #Q2_text(plenary_corpus=plenary_corpus,committee_corpus=committee_corpus)
     Q3_text(plenary_corpus=plenary_corpus,committee_corpus=committee_corpus)
