@@ -2,9 +2,6 @@ import pandas as pd
 import numpy as np
 import heapq
 
-
-
-
 class corpus:
     def __init__(self,type,corpus):
         try:
@@ -16,7 +13,6 @@ class corpus:
             frequncy_dictionary = {} #frequncy_dictionary[word] = how many did the token appear
             df = df.loc[df['protocol_type'] == type]
             for row_number,row in enumerate(df.itertuples()):
-
                 all_words = str(row[5]).strip().split(" ")
                 for word in all_words:
                     if word not in frequncy_dictionary.keys():
@@ -28,8 +24,6 @@ class corpus:
             corpus_size = 0
             for word in frequncy_dictionary.keys():
                 corpus_size+=frequncy_dictionary[word]
-
-
 
             # frequncy_dictionary_2_words[word1][word2] is how many did word 1 appear before word 2
             frequncy_dictionary_2_words = {}
@@ -46,11 +40,9 @@ class corpus:
 
                     if word not in frequncy_dictionary_2_words[first_word].keys():# if we dont have an entry to the seond word then make one
                         frequncy_dictionary_2_words[first_word][word] = 0.0
-                    
+            
                     frequncy_dictionary_2_words[first_word][word] +=1.0
-
                     first_word = word#change the first word in the bigram
-
 
             frequncy_dictionary_3_words = {}
             for row_number,row in enumerate(df.itertuples()):
@@ -84,9 +76,7 @@ class corpus:
             self.frequncy_dictionary,self.frequncy_dictionary_2_words,self.frequncy_dictionary_3_words,self.corpus_size=frequncy_dictionary,frequncy_dictionary_2_words,frequncy_dictionary_3_words,corpus_size
         except Exception as e:
             print('error in __init__: '+str(e))
-            
 
-        
     def calculate_prob_of_sentence(self,sentence,smoothing = 'Linear'):
         try:
             frequncy_dictionary,frequncy_dictionary_2_words,frequncy_dictionary_3_words,corpus_size = self.frequncy_dictionary,self.frequncy_dictionary_2_words,self.frequncy_dictionary_3_words,self.corpus_size
@@ -145,8 +135,6 @@ class corpus:
         except Exception as e:
             print('error in calculate_prob_of_sentence: '+str(e))
 
-
-
     def get_next_token(self,sentence):
         try:
             frequncy_dictionary,frequncy_dictionary_2_words,frequncy_dictionary_3_words,corpus_size = self.frequncy_dictionary,self.frequncy_dictionary_2_words,self.frequncy_dictionary_3_words,self.corpus_size
@@ -170,8 +158,6 @@ class corpus:
             return max_token
         except Exception as e:
             print('error in get_next_token: '+str(e))
-
-
 
     def  get_k_n_collocations(self,k,n):
         try:
@@ -214,7 +200,7 @@ class corpus:
             return heapq.nlargest(k, collocations_dictionary, key=collocations_dictionary.get)
         except Exception as e:
             print('error in get_k_n_collocations: '+str(e))
-        
+
 def Q2_text (plenary_corpus,committee_corpus):
     try:
         text = 'Two-gram collocations:\n'
@@ -252,7 +238,7 @@ def Q2_text (plenary_corpus,committee_corpus):
         for col in results:
             text+=col +'\n'
         text+='\n'
-        with open('knesset_collocations.txt','w',encoding='utf-8') as file:
+        with open('knesset_collocations.txt','w',encoding='UTF-8') as file:
             file.write(text)
     except Exception as e:
         print('error in Q2_text: '+str(e))
@@ -261,7 +247,7 @@ def Q2_text (plenary_corpus,committee_corpus):
 
 def Q3_text (plenary_corpus,committee_corpus):
     try:
-        with open('masked_sentences.txt', 'r',encoding='utf-8') as file:
+        with open('masked_sentences.txt', 'r',encoding='UTF-8') as file:
         # Read the contents of the file
             file_contents = file.read()
             sentences = file_contents.split('\n')
@@ -331,17 +317,15 @@ def Q3_text (plenary_corpus,committee_corpus):
     except Exception as e:
         print('error in Q3_text: '+str(e))
 
-
-            
-
-
 if __name__ == '__main__':
     try:
         #we work on plenary
-        plenary_corpus = corpus('plenary','example_knesset_corpus.csv')
-        #print(len(plenary_corpus.frequncy_dictionary.keys()))
-        committee_corpus = corpus('committee','example_knesset_corpus.csv')
-        #Q2_text(plenary_corpus=plenary_corpus,committee_corpus=committee_corpus)
+        plenary_corpus = corpus('plenary','knesset_corpus.csv')
+        #Loading the corpus (using the one attached with the assignment 'example_knesset_corpus.csv')
+        committee_corpus = corpus('committee','knesset_corpus.csv')
+        #Step 2 - Collactions
+        Q2_text(plenary_corpus=plenary_corpus,committee_corpus=committee_corpus)
+        #Step 3 - Model Implementations
         Q3_text(plenary_corpus=plenary_corpus,committee_corpus=committee_corpus)
     except Exception as e:
         print('error in main: '+str(e))
