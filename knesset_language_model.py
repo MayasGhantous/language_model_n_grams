@@ -291,20 +291,28 @@ def Q3_text (plenary_corpus,committee_corpus):
 
                 text += 'Committee tokens: ' #+str(committee_tokens) +'\n'
                 for current_token in committee_tokens:
-                    text+=f'"{current_token}",'
+                    text+=f'{current_token},'
                 text = text[:-1] + '\n'
                 committee_prop = committee_corpus.calculate_prob_of_sentence(committee_sentence)
+                plenary_prop = plenary_corpus.calculate_prob_of_sentence(committee_sentence)
+
                 text+= 'Probability of committee sentence in committee corpus: '+str(committee_prop)+'\n'
-                text += 'Probability of committee sentence in plenary corpus: '+str(plenary_corpus.calculate_prob_of_sentence(committee_sentence))+'\n'
+                text += 'Probability of committee sentence in plenary corpus: '+str(plenary_prop)+'\n'
+                text+= 'This sentence is more likely to appear in corpus: '
+                if plenary_prop>committee_prop:
+                    text+='plenary' +'\n'
+                else:
+                    text+='committee' +'\n'
 
                 text+= 'Plenary sentence: '+plenary_sentence +'\n'
                 text+= 'Plenary tokens: '#+str(plenary_tokens) +'\n'
                 for current_token in plenary_tokens:
-                    text+=f'"{current_token}",'
+                    text+=f'{current_token},'
                 text = text[:-1] + '\n'
+                committee_prop = committee_corpus.calculate_prob_of_sentence(plenary_sentence)
                 plenary_prop = plenary_corpus.calculate_prob_of_sentence(plenary_sentence)
                 text+= 'Probability of plenary sentence in plenary corpus: '+str(plenary_prop) +'\n'
-                text+='Probability of plenary sentence in committee corpus: '+str(committee_corpus.calculate_prob_of_sentence(plenary_sentence))+'\n'
+                text+='Probability of plenary sentence in committee corpus: '+str(committee_prop)+'\n'
                 text+= 'This sentence is more likely to appear in corpus: '
 
                 if plenary_prop>committee_prop:
